@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="batchviews">
+        <div class="row mx-3">
+            <div class="col mb-3">
+                <div class="card">
+                    <div class="card-body text-decoration-none">
+                        <div class="mx-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="batchcreate.html" class="btn btn-outline-danger btn-sm"><i
+                                        class="fas fa-plus-circle me-1"></i>Create
+                                    Batch</a>
+                                <div class="form-group ms-5">
+                                    <i class="far fa-calendar text-primary fs-4" id="startDate"></i>
+                                    <!-- <input type="date" name="startDate" id="startDate" class="form-control form-control-sm" /> -->
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <div class="row gx-2">
+                                    <div class="col-md-3 col-sm-12 mb-3">
+                                        <a href="batchdetail.html" class="text-muted text-decoration-none">
+                                            <div class="card cardhovers p-2">
+                                                <!-- <img src="https://miro.medium.com/max/1838/1*oFfl-1UKLtd8XOswpwgriA.png" class="cstm-height-card" alt="batch-logo"> -->
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <span class="h6">OJT Batch-2</span>
+                                                    <div>
+                                                        <span class="badge bg-success"
+                                                              style="width: 80px;">active</span>
+                                                    </div>
+                                                    <p class="mt-4">With supporting text below as a natural lead-in to
+                                                        additional contenposuere erat a ante...view more</p>
+                                                    <div>
+                                                        <span class="me-2"><i class="fas fa-tasks"></i></span>21 Tasks
+                                                        <span class="mx-2"><i class="far fa-comments-alt"></i></span>741
+                                                        Comments
+                                                    </div>
+                                                    <div class="progress mt-2" style="height: 3px;">
+                                                        <div class="prgress-bar bg-primary" style="width: 15%;"></div>
+                                                    </div>
+                                                    <div class="dropstart">
+                                                        <a href="" data-bs-toggle="dropdown">
+                                                            <i class="fas fa-ellipsis-h fs-6 text-muted"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a href="batchedit.html"
+                                                                   class="dropdown-item text-capitalize">edit</a></li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">delete</a>
+                                                            </li>
+                                                            <li><a href="studentlist.html"
+                                                                   class="dropdown-item text-capitalize">view</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 mb-3">
+                                        <a href="studentlist.html" class="text-muted text-decoration-none">
+                                            <div class="card p-2 cardhovers">
+                                                <!-- <img src="https://th.bing.com/th/id/OIP.WitlAsQs7N90Fohp1LaepQHaEK?pid=ImgDet&rs=1" class="cstm-height-card" alt="..."> -->
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <span class="h6">PFC Batch-2</span>
+                                                    <div>
+                                                        <span class="badge bg-secondary">finished</span>
+                                                    </div>
+                                                    <p class="mt-4">With supporting text below as a natural lead-in to
+                                                        additional contenposuere erat a ante...view more</p>
+                                                    <div>
+                                                        <span class="mx-2"><i class="fas fa-tasks"></i></span>21 Tasks
+                                                        <span class="mx-2"><i class="far fa-comments-alt"></i></span>741
+                                                        Comments
+                                                    </div>
+                                                    <div class="progress mt-2" style="height: 3px;">
+                                                        <div class="prgress-bar bg-danger" style="width: 30%;"></div>
+                                                    </div>
+                                                    <div class="dropstart">
+                                                        <a href="" data-bs-toggle="dropdown">
+                                                            <i class="fas fa-ellipsis-h fs-6 text-muted"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu float-start">
+                                                            <li><a href="update-batch.html"
+                                                                   class="dropdown-item text-capitalize">edit</a></li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">delete</a>
+                                                            </li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">view</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 mb-3">
+                                        <a href="" class="text-muted text-decoration-none">
+                                            <div class="card cardhovers p-2">
+                                                <!-- <img src="https://www.datocms-assets.com/14946/1638186862-reactjs.png?auto=format" class="cstm-height-card" alt="..."> -->
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <span class="h6">JWD Batch-2</span>
+                                                    <div>
+                                                        <span class="badge bg-success"
+                                                              style="width: 80px;">active</span>
+                                                    </div>
+                                                    <p class="mt-4">With supporting text below as a natural lead-in to
+                                                        additional contenposuere erat a ante...view more</p>
+                                                    <div><span class="mx-2"><i class="fas fa-tasks"></i></span>21
+                                                        Tasks<span class="mx-2"><i
+                                                                class="far fa-comments-alt"></i></span>741 Comments
+                                                    </div>
+                                                    <div class="progress mt-2" style="height: 3px;">
+                                                        <div class="prgress-bar bg-warning" style="width: 50%;"></div>
+                                                    </div>
+                                                    <div class="dropstart">
+                                                        <a href="" data-bs-toggle="dropdown">
+                                                            <i class="fas fa-ellipsis-h fs-6 text-muted"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" style="opacity: 0.8;">
+                                                            <li><a href="update-batch.html"
+                                                                   class="dropdown-item text-capitalize">edit</a></li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 mb-3">
+                                        <a href="#" class="text-muted text-decoration-none">
+                                            <div class="card cardhovers p-2">
+                                                <!-- <img src="https://i.ytimg.com/vi/kX0tq3qsY_U/maxresdefault.jpg" class="cstm-height-card" alt="..."> -->
+                                                <div class="card-body d-flex justify-content-between">
+                                                    <span class="h6">PHP Batch-2</span>
+                                                    <div>
+                                                        <span class="badge bg-success"
+                                                              style="width: 80px;">active</span>
+                                                    </div>
+                                                    <p class="mt-4">With supporting text below as a natural lead-in to
+                                                        additional contenposuere erat a ante...view more</p>
+                                                    <div><span class="mx-2"><i class="fas fa-tasks"></i></span>21
+                                                        Tasks<span class="mx-2"><i
+                                                                class="far fa-comments-alt"></i></span>741 Comments
+                                                    </div>
+                                                    <div class="progress mt-2" style="height: 3px;">
+                                                        <div class="prgress-bar bg-success" style="width: 100%;"></div>
+                                                    </div>
+                                                    <div class="dropstart">
+                                                        <a href="#" data-bs-toggle="dropdown">
+                                                            <i class="fas fa-ellipsis-h fs-6 text-muted"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu" style="opacity: 0.8;">
+                                                            <li><a href="update-batch.html"
+                                                                   class="dropdown-item text-capitalize">edit</a></li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">delete</a>
+                                                            </li>
+                                                            <li><a href="#"
+                                                                   class="dropdown-item text-capitalize">view</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

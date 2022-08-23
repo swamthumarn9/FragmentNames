@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="examcreate">
+        <div class="container p-3" style="margin-top: 30px">
+            <div class="text-center">
+                <h2>
+                    <i class="fas fa-file-code text-success me-3"></i>Create Exam
+                </h2>
+            </div>
+            <div class="exam-title d-flex text-align-center mb-3">
+                <div class="h3">
+                    <input type="text" placeholder="Enter Title" class="border-0"
+                           style="background-color: aliceblue;border: none;border-bottom: 1px solid black !important;outline: none;" />
+                </div>
+            </div>
+            <div class="col-md-4 p-3 bg-light shadow" style="border-radius: 10px;bottom: 0;">
+                <div class="p-4 mb-2 border border-1" style="border-radius: 10px;">
+                    <div class="mb-3">
+                        <p class="text-muted h4">For</p><br>
+                    </div>
+                    <div class="mb-4">
+                        <div class="form-group mb-2">
+                            <label for="due_date">Start Time</label>
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="form-group mb-2">
+                            <label for="due_date">End Time</label>
+                            <input type="datetime-local" class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="form-group mb-2">
+                            <label for="points">Points</label>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-outline-primary" value="Create">
+                <input type="reset" class="btn btn-outline-danger" value="Cancel">
+            </div>
+            <!-- Add Answer -->
+            <div class="col-md-6 col-sm-12 p-4 bg-light shadow"
+                 style="position: rig; bottom: 20px;">
+                <div class="col-md-7 col-sm-12">
+                    <div class="h5">
+                        <input type="text" placeholder="Exam Title" class="border-0"
+                               style="background-color: aliceblue;border: none;border-bottom: 1px solid black !important;outline: none;" />
+                    </div>
+
+                    <div class="exam-body">
+                        <div class="question">
+                            <textarea class="form-control" placeholder="Enter Question here.."
+                                      id="floatingTextarea2"></textarea>
+                        </div>
+
+
+                        <div class="add-answer mt-3">
+                            <p id="RadioForm">
+                            <div class="">
+                                <span>Add Answer</span><i class="fas fa-plus-square text-dark w-20 ms-2"
+                                                          style="cursor: pointer" id="addRadioBtn"></i>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="submit mt-3">
+                            <input type="submit" class=" btn btn-outline-danger" />
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Exam Form-->
+                <div>
+                    <div class="col-md-7 col-sm-12">
+                        <form action="">
+                            <p>Question</p>
+                            <p>
+                                <input type="radio" name="choose" id="choose" />
+                                <input type="text" class="border-0" placeholder="answer1">
+                            </p>
+                            <p>
+                                <input type="radio" name="choose" id="choose" />
+                                <input type="text" class="border-0" placeholder="answer2">
+                            </p>
+                            <p>
+                                <input type="radio" name="choose" id="choose" />
+                                <input type="text" class="border-0" placeholder="answer3">
+                            </p>
+                            <p>
+                                <input type="radio" name="choose" id="choose" />
+                                <input type="text" class="border-0" placeholder="answer4">
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

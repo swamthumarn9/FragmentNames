@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="profile">
+        <div class="container paddings">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body py-4">
+                            <!-- <div class="d-flex justify-content-center"> -->
+                            <div>
+                                <img src="http://127.0.0.1:5500/LMS%20VIEW/LMS_Project/LMS-V1/admin/img/default-profile.png"
+                                     class="rounded-circle me-2" width="70px" alt="">
+                                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                            </div>
+
+
+
+
+                            <div class="mt-4 text-muted">
+                                <h6 class="mb-3">Name: <span class="ms-3">John</span></h6>
+                                <h6 class="mb-3">Email: <span class="ms-3">user@email.domain</span></h6>
+                                <h6 class="mb-3">Location : <span class="ms-3">USA</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-6">
+                    <button class="btn btn-dark" id="changepassword">Change Password</button>
+                </div>
+            -->
+                <div class="col-md-8 col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Joined Class</h5>
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th>Batch</th>
+                                            <th>Course</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>OJT Batch-4</td>
+                                            <td>Java Course</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-2 shadow">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Profile Change Password</h5>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12" id="password">
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label>Old Password</label>
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>New Password</label>
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Confirm Password</label>
+                                                    <input type="text" class="form-control form-control-sm">
+                                                </div>
+                                                <div class="form-group d-flex justify-content-end mt-2">
+                                                    <button type="submit"
+                                                            class="btn btn-outline-success">Change</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

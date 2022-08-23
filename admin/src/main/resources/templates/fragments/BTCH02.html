@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="batchcreate">
+        <div class="container paddings col-md-9">
+            <div class="row mx-3">
+                <div class="col mb-3">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="container">
+                                <h3 class="text-center" style="color: darkblue;"><i class="fas fa-user-friends me-2"></i>Create Batch
+                                </h3>
+                                <form action="">
+                                    <div class="row mx-2">
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="batch-name">Batch Name</label>
+                                            <input type="text" name="batch-name" id="batch-name"
+                                                   class="form-control form-control-sm mt-2"
+                                                   placeholder="Enter Batch Name">
+                                        </div>
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="course-name">Course Name</label>
+                                            <select name="course" id="course" class="form-select form-select-sm mt-2">
+                                                <option selected disabled>Choose Your Course</option>
+                                                <option value="1">Java Web Developement</option>
+                                                <option value="2">Web Developement with PHP</option>
+                                                <option value="3">Programming Fundamental Course</option>
+                                                <option value="4">IOS Devleoper Course</option>
+                                                <option value="5">Andriod Developer Course</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="batch-photo">Photo Upload</label>
+                                            <input type="file" name="batch-photo" id="batch-photo"
+                                                   class="form-control form-control-sm mt-2"
+                                                   placeholder="Enter Batch Name">
+                                        </div>
+                                        <div class="col-md-12 form-group mb-3">
+                                            <label for="description">Description</label>
+                                            <textarea class="form-control mt-2" name="description" id="description"
+                                                      rows="5" style="resize: none;"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-end mb-2">
+                                            <button type="reset" class="btn btn-outline-danger me-2">Cancel</button>
+                                            <button type="submit" class="btn btn-outline-primary">Create
+                                                Batch</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

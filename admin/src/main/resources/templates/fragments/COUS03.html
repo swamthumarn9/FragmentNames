@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="modulelist">
+        <div class="container bg-light shadow p-3 mt-5">
+            <div class="mb-3">
+                <h3 class="text-decoration-none text-center">
+                    <i class="fas fa-book-open me-2"></i>Course Modules
+                </h3>
+            </div>
+            <div class="add-schedule d-flex justify-content-end mb-2">
+                <a href="admin-createAssignment.html" type="button" class="btn btn-primary">Create Assignment</a>
+                </span>
+            </div><hr>
+            <div class="table">
+                <table id="datatable" class="table">
+                    <thead>
+                    <tr>
+                        <th>Module ID</th>
+                        <th>Module Name</th>
+                        <th>File Name</th>
+                        <th>Video Name</th>
+                        <th>Course Name</th>
+                        <th>..</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>MOD001</td>
+                        <td>JSP</td>
+                        <td>JSP Part 1, JSP Part 2, JSP Part 3</td>
+                        <td>JSP Part 1, JSP Part 2, JSP Part 3</td>
+                        <td>Java</td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MOD002</td>
+                        <td>JSTL</td>
+                        <td>JSTL</td>
+                        <td>JSTL</td>
+                        <td>Java</td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>MOD003</td>
+                        <td>CRUD Project</td>
+                        <td>CRUD Project Book Management System</td>
+                        <td>CRUD Project Book Management System</td>
+                        <td>Java</td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

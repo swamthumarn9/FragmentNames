@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="examlist">
+      <div class="container bg-light shadow p-3 mt-5">
+        <div class="mb-3">
+          <h3 class="text-decoration-none text-center"><i class="fas fa-laptop-code me-2"></i>
+            All Exam List
+          </h3>
+        </div>
+        <div class="add-schedule d-flex justify-content-end mb-2">
+          <span class="me-2">
+            <select class="form-select" aria-label="Disabled select example">
+              <option selected disabled>Select Batch</option>
+              <option value="1">OJT Batch 2</option>
+              <option value="2">JWD Batch 5</option>
+              <option value="3">Others</option>
+            </select>
+          </span>
+          <a href="batchdetail.html" class="btn btn-primary text-light me-2">View Batch</a>
+          <a href="create-exam.html" class="btn btn-danger text-light me-2">Create</a>
+        </div>
+        <hr />
+        <div class="table">
+          <table id="datatable" class="table">
+            <thead>
+              <tr>
+                <th scope="col">Exam ID</th>
+                <th scope="col">Exam Title</th>
+                <th scope="col">Start Datetime</th>
+                <th scope="col">End Datetime</th>
+                <th scope="col">Course Name</th>
+                <th scope="col">Points</th>
+                <th>..</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>EX001</td>
+                <td>Mid-Term</td>
+                <td>2022-03-03 1:00pm</td>
+                <td>2022-03-03 3:00pm</td>
+                <td>Advanced Java</td>
+                <td>100</td>
+                <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                  <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>EX002</td>
+                <td>Mid-Term</td>
+                <td>2022-03-03 1:00pm</td>
+                <td>2022-03-03 3:00pm</td>
+                <td>Web Development Fundamental</td>
+                <td>100</td>
+                <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                  <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>EX003</td>
+                <td>Mid-Term</td>
+                <td>2022-03-03 1:00pm</td>
+                <td>2022-03-03 3:00pm</td>
+                <td>OJT</td>
+                <td>100</td>
+                <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                  <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>EX004</td>
+                <td>Final</td>
+                <td>2022-03-03 1:00pm</td>
+                <td>2022-03-03 3:00pm</td>
+                <td>Asp.net</td>
+                <td>100</td>
+                <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                  <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

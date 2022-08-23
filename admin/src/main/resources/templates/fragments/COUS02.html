@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Course List</title>
+</head>
+<body>
+    <section th:fragment="courselist">
+        <div class="container bg-light shadow p-3 mt-5">
+            <div class="mb-3">
+                <h3 class="text-decoration-none text-center">
+                    <i class="fas fa-book me-2"></i>All Course List
+                </h3>
+            </div>
+            <div class="add-schedule d-flex justify-content-end mb-2">
+                <a href="create-exam.html" type="button" class="btn btn-danger me-2">Create Exam</a>
+                </span>
+            </div><hr>
+            <div class="table">
+                <table id="datatable" class="table">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>ID</th>
+                        <th>Course Name</th>
+                        <th>Created Date</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>COU001</td>
+                        <td>Java</td>
+                        <td>12 June 2022</td>
+                        <td><a href="admin-coursemodules.html" class="btn btn-outline-info text-dark">details</a></td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>COU001</td>
+                        <td>Java</td>
+                        <td>12 June 2022</td>
+                        <td><a href="admin-coursemodules.html" class="btn btn-outline-info text-dark">details</a></td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>COU001</td>
+                        <td>Java</td>
+                        <td>12 June 2022</td>
+                        <td><a href="admin-coursemodules.html" class="btn btn-outline-info text-dark">details</a></td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>COU001</td>
+                        <td>Java</td>
+                        <td>12 June 2022</td>
+                        <td><a href="admin-coursemodules.html" class="btn btn-outline-info text-dark">details</a></td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>COU001</td>
+                        <td>Java</td>
+                        <td>12 June 2022</td>
+                        <td><a href="admin-coursemodules.html" class="btn btn-outline-info text-dark">details</a></td>
+                        <td><a href="" class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></a>
+                            <a href="" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
